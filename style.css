@@ -9,16 +9,24 @@ nav{
     background-color: black;
     color: grey;
     width: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
 }
+
+.container-logo, .container-search,
+.container-playlist, 
+.container-download-profile{
+    display: flex;
+    flex-direction: column;
+} 
 
 .container-all{
     width: 80%;
     margin: 0 auto;
 
 }
-.logo-small{
-    display: none;
-}
+
 
 .logo{
     width: 100%;
@@ -41,16 +49,32 @@ h3{
     color: white;
 }
 
+.new-playlist ul li{
+    list-style: none;
+    margin-top: 5px;
+}
 
 
 @media screen and (max-width: 576px){
-    nav{
-        width: 7%;
+    /* barra laterale mobile */
+    .container-all{
         height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    .container-logo, .container-search,
+    .container-cerca, .container-library,
+    .container-download-profile{
+        display: flex;
+    }
+
+    .container-download-profile{
+        justify-content: flex-end;
+        height: 100vh;
+    }
+
 
     span, h3, .logo, 
     .container-playlist{
@@ -84,9 +108,20 @@ h3{
         margin-top: 10px;
     }
 
-    .container-download-profile{
-        
+    .container-apgrade{
+        display: flex;
+        background-color: red;
+        height: 100px;
+        justify-content: flex-end;
     }
+
+    .frase p{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    
 
 }
     

@@ -5,123 +5,143 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.container-playlist, .logo,
+.home span, .cerca span, 
+.library span, .download span,
+.profile span{
+    display: none;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #141922;
+}
+
+/* barra laterale */
 nav{
     background-color: black;
-    color: grey;
-    width: 8%;
+    width: 7%;
     display: flex;
-    flex-direction: column;
-    align-items: space-around;
 }
-
-.container-logo, .container-search,
-.container-playlist, 
-.container-download-profile{
-    display: flex;
-    flex-direction: column;
-} 
 
 .container-all{
-    width: 80%;
-    margin: 0 auto;
-
-}
-
-
-.logo{
+    display: flex;
+    flex-direction: column;
     width: 100%;
+}
+
+.container-all .container-download-profile{
+    justify-content: flex-end;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.container-logo{
     padding-top: 5px;
+    width: 30px;
+    margin: 0 auto;
 }
 
-.home img, .cerca img, 
-.library img{
+.container-search{
+    padding-top: 10px;
+    margin: 0 auto;
     width: 25px;
-    margin-top: 10px;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
-.container-playlist{
-    margin-top: 15px;
-}
-
-h3{
-    font-size: 15px;
-    color: white;
-}
-
-.new-playlist ul li{
-    list-style: none;
+.cerca, .library{
     margin-top: 5px;
 }
 
+.download{
+    width: 18px;
+    margin: 0 auto;
+}
 
-@media screen and (max-width: 576px){
-    /* barra laterale mobile */
-    .container-all{
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container-logo, .container-search,
-    .container-cerca, .container-library,
-    .container-download-profile{
-        display: flex;
-    }
-
-    .container-download-profile{
-        justify-content: flex-end;
-        height: 100vh;
-    }
+.profile{
+    width: 20px;
+    background: gray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
 
 
-    span, h3, .logo, 
-    .container-playlist{
-        display: none;
-    }
+/* parte centrale */
+.central-part{
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+}
 
-    .logo-small img{
-        width: 30px;
-        margin-top: 5px;
-        cursor: pointer;
-    }
+.container-apgrade{
+    display: flex;
+    height: 60px;
+    background-color: #080B12;
+    width: 100%;
+    justify-content: flex-end;
+}
 
-    .home img, .cerca img, 
-    .library img{
-        width: 25px;
-        margin-top: 10px;
-        cursor: pointer;
-    }
+.container-apgrade .frase{
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    color: white;
+}
 
-    .download img{
-        width: 15px;
-    }
-    
-    .profile img{
-        background-color: grey;
-        border-radius: 15px;
-        width: 25px;
-    }
+.frase p{
+    margin-right: 5px;
+    text-decoration: none;
+}
 
-    .profile img, .download img{
-        margin-top: 10px;
-    }
+.frase > p{
+    padding: 10px;
+    border: solid 2px white;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+    font-weight: bold;
+}
 
-    .container-apgrade{
-        display: flex;
-        background-color: red;
-        height: 100px;
-        justify-content: flex-end;
-    }
+.central-part-categories,
+.central-part-categories-2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
 
-    .frase p{
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
+.container-categories{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
 
-    
+.container-categories div a,
+.container-categories-2 div a{
+    color: gray;
+    text-decoration: none;
+}
 
+.container-categories-2{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-categories-2 div{
+    margin-right: 15px;
+}
+
+.container-categories-2 div,
+.container-categories div{
+    font-size: 10px;
+    font-weight: bold;
 }
     

@@ -145,3 +145,22 @@ nav{
     font-weight: bold;
 }
     
+/* album */
+.album{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.album .title{
+    color: white;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.container-album{
+    display: flex;
+}
+
+.album-title{
+    
+}

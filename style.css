@@ -155,6 +155,8 @@ nav{
     color: white;
     font-weight: bold;
     margin-top: 25px;
+    font-size: 19px;
+    margin-bottom: 20px;
 }
 
 .container-album{
@@ -162,5 +164,26 @@ nav{
 }
 
 .album-title{
-    
+    width: 45%;
+    text-decoration: none
+}
+
+.cover-album img{
+    width: 100%;
+}
+
+.container-title-author{
+    text-align: center;
+}
+
+.title-album{
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.author-album{
+    color: grey;
+    font-size: 12px;
+    margin-top: 5px;
 }

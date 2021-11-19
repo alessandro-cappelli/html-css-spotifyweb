@@ -149,6 +149,7 @@ nav{
 .album{
     width: 90%;
     margin: 0 auto;
+    overflow: scroll;
 }
 
 .album .title{
@@ -161,6 +162,7 @@ nav{
 
 .container-album{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .album-title{

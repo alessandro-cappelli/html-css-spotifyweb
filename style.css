@@ -22,7 +22,7 @@ main{
 /* barra laterale */
 nav{
     background-color: black;
-    width: 7%;
+    width: 36px;
     display: flex;
 }
 
@@ -152,7 +152,7 @@ nav{
     overflow: scroll;
 }
 
-.album .title{
+.album .title, .title-2{
     color: white;
     font-weight: bold;
     margin-top: 25px;
@@ -163,6 +163,7 @@ nav{
 .container-album{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .album-title{
@@ -188,4 +189,14 @@ nav{
     color: grey;
     font-size: 12px;
     margin-top: 5px;
+}
+
+/* seconda parte album */
+.title-2{
+    width: 100%;
+}
+
+/* terza parte album */
+#artist{
+    border-radius: 120px;
 }
